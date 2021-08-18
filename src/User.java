@@ -26,8 +26,16 @@ public class User {
 		return firstName + " " + lastName; //Como es de tipo String, devolverá en return una String
 	}
 	
+	//Method overloading --> Podemos nombrar dos methods igual, siempre que el parámetro sea diferente. El sistema elegirá el method al cual se adapte el parámetro pasado al invocarlo
+	public String output2(boolean nice) {
+		if(nice) {
+			return "You are a nice person " + output2();
+		}
+		return "You are a freak "  + output2();
+	}
+	
 	public void inputoutput() {
-		System.out.println("Intruduce una frase:");
+		System.out.println("Introduce una frase:");
 		Scanner scanner = new Scanner(System.in);
 	    String mensaje = scanner.nextLine();
 	    scanner.close(); //cierra el scanner abierto

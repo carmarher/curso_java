@@ -17,6 +17,7 @@ public class f_ClassAndObject2 {
 		
 //		System.out.println(usuario.firstName + " " + user2.lastName); //Esto no va funcionar pq firstName está definido como "private" y no puedo
 																	//acceder a su valor salvo con methods de la propia class User2 --> getter-Method
+		System.out.println("Output del usuario1 usando setters and getters:");
 		System.out.println(usuario1.getFirstName() + " " + usuario1.lastName); //getter-Method de la class User2 para el private field firstName
 //		System.out.println(usuario.getFirstName() + " " + usuario.getLastName()); //getter-Method de la class User2 para private and public fields
 		
@@ -28,28 +29,21 @@ public class f_ClassAndObject2 {
 		List<User2> usuarios = new ArrayList<User2>();
 		usuarios.add(usuario1);
 		usuarios.add(usuario2);
+		System.out.println("Output del usuario2 usando listas de objetos:");
 		System.out.println(usuarios.get(1).getFullName());
 		
 		//vs Using instance Methods
+		System.out.println("Output del usuario1 usando instance-Methods:");
 		usuario1.printUser1();
 		
-		//vs Using static Methods		
+		//vs Using static Methods	
+		System.out.println("Output del usuario1 usando static-Methods:");
 		User2.printUser2(usuario1);
 
 		
-		/*Custom Arrays
-		User2 me = new User2();
-		me.setFirstName("Carlos");
-		me.setLastName("Martín");
-		
-		User2 you = new User2();
-		you.setFirstName("Mikel");
-		you.setLastName("Jaca");
-		List<User2> users = new ArrayList<User2>();
-		users.add(you);
-		users.add(me);
-		
-//		System.out.println(users.get(1).getFullName());*/
+		//vs Using statich Methods for a list of objects
+		System.out.println("Output de los objetos de la class User2 usando static-Methods y listas:");
+		User2.printUsers(usuarios);
 		
 	}
 

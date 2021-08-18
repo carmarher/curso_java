@@ -1,3 +1,5 @@
+//Este código contiene un resumen desordenado de todo el curso
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;

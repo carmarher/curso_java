@@ -1,3 +1,5 @@
+//Este código contiene una segunda versión del resumen desordenado de todo el curso
+
 import java.util.Scanner;
 
 public class MySweetProgram2 {

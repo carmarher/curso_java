@@ -48,6 +48,7 @@ public class User2 {
 		System.out.println(u.getFullName());
 	}
 	
+	//Static Method --> Se usará invocando directanmente a la class User2. En este caso a una lista entera de la class User2
 	public static void printUsers(List<User2> users) {
 		for(User2 u : users) {
 			System.out.println(u.getFullName());

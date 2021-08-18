@@ -32,8 +32,13 @@ public class e_ClassAndObject1 {
 		usuario.output1(x);	//Repite el output el número de veces indicado en el argumento
 		
 		//Output mediante un método String de la class User
-		System.out.println("Imprimimos las variables asignadas mediante el method output() de class User:");
+		System.out.println("Imprimimos las variables asignadas mediante el method output2() de class User:");
 		System.out.println(usuario.output2().toUpperCase()); //el method output2() devuelve una String directamente
+		
+		//Method overload: Output mediante un method del mismo nombre que el anterior pero con un parámetro diferente
+		System.out.println("Imprimimos las variables asignadas mediante el method output2(boolean nice) de class User:");
+		System.out.println(usuario.output2(true));
+		System.out.println(usuario.output2(false));
 		
 		//Input mediante un método de la class User
 		usuario.inputoutput();
